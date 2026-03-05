@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresh Cut Barber</title>
+
+  <style>
+    /* ===== RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ===== CONTAINER ===== */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #000;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+
+    header span {
+      color: #d4af37;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d4af37;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    /* ===== SERVICES ===== */
+    .services {
+      background: #161616;
+      padding: 40px 0;
+    }
+
+    .services h3 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.6rem;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .service {
+      background: #000;
+      padding: 15px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .service span {
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    /* ===== HOURS ===== */
+    .hours {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .hours h3 {
+      margin-bottom: 15px;
+    }
+
+    .hours p {
+      color: #ccc;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #000;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* ===== DESKTOP (MINIMAL) ===== */
+    @media (min-width: 768px) {
+      .hero h2 {
+        font-size: 2.5rem;
+      }
+
+      .service-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1><span>Fresh</span> Cut Barber</h1>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h2>Sharp Cuts. Clean Style.</h2>
+      <p>Professional barber services at affordable prices.</p>
+      <a class="btn" href="https://wa.me/27700000000" target="_blank">
+        Book on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="container">
+      <h3>Our Services</h3>
+
+      <div class="service-list">
+        <div class="service">
+          <p>Adult Haircut</p>
+          <span>R80</span>
+        </div>
+
+        <div class="service">
+          <p>Fade + Line Up</p>
+          <span>R100</span>
+        </div>
+
+        <div class="service">
+          <p>Beard Trim</p>
+          <span>R50</span>
+        </div>
+
+        <div class="service">
+          <p>Kids Haircut</p>
+          <span>R60</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS -->
+  <section class="hours">
+    <div class="container">
+      <h3>Working Hours</h3>
+      <p>Mon – Sat: 9:00 AM – 7:00 PM</p>
+      <p>Sunday: Closed</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Fresh Cut Barber. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
